@@ -71,7 +71,8 @@ const serviceProviderConfig: IServiceProviderConfig = {
     ],
     name: "Required attrs"
   },
-  spidCieUrl: "https://preproduzione.idserver.servizicie.interno.gov.it/idp/shibboleth?Metadata",
+  spidCieUrl:
+    "https://preproduzione.idserver.servizicie.interno.gov.it/idp/shibboleth?Metadata",
   spidTestEnvUrl: "https://spid-testenv2:8088",
   spidValidatorUrl: "http://localhost:8080",
   strictResponseValidation: {
@@ -92,8 +93,7 @@ const samlConfig: SamlConfig = {
   callbackUrl: "http://localhost:3000" + appConfig.assertionConsumerServicePath,
   // decryptionPvk: fs.readFileSync("./certs/key.pem", "utf-8"),
   identifierFormat: "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
-  issuer: "https://test.gov.it/sp",
-  idpIssuer: "https://test.gov.it/sp",
+  issuer: "https://spid.agid.gov.it/cd",
   logoutCallbackUrl: "http://localhost:3000/slo",
   privateCert: fs.readFileSync("./certs/key.pem", "utf-8"),
   validateInResponseTo: true
