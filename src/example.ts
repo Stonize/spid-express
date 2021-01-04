@@ -92,7 +92,8 @@ const samlConfig: SamlConfig = {
   callbackUrl: "http://localhost:3000" + appConfig.assertionConsumerServicePath,
   // decryptionPvk: fs.readFileSync("./certs/key.pem", "utf-8"),
   identifierFormat: "urn:oasis:names:tc:SAML:2.0:nameid-format:transient",
-  issuer: "https://spid.agid.gov.it/cd",
+  issuer: "https://test.gov.it/sp",
+  idpIssuer: "https://test.gov.it/sp",
   logoutCallbackUrl: "http://localhost:3000/slo",
   privateCert: fs.readFileSync("./certs/key.pem", "utf-8"),
   validateInResponseTo: true
